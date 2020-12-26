@@ -48,36 +48,7 @@ const signIn = (event) => {
 const signUp = (event) => {
   // preventing reloading page
    event.preventDefault();  
-  const signInemail=document.querySelector("#SignEmail")
-    // Splitting email by '_'
-  const split1 = email.split("_");
-
-  // First element will be user type ie. pa | ch | pu
-  if (split[0] === "ch") {
-    alert("You are a child")
-    const childLink = document.createElement("a");
-    childLink.href = "child.html";
-    childLink.click()
-    
-    
-  
-
-  }
-  else if (split1[0] === "pa") {
-    alert("You are a Parent")
-    const parentLink = document.createElement("a");
-    parentLink.href = "parent.html";
-    parentLink.click()
-    
-  }
-  else if ((split1[0] === "pu")) {
-    alert("You are Public")
-    const publicLink = document.createElement("a");
-    publicLink.href = "public.html";
-    publicLink.click()
-    
-  }
-
+  alert("signin up..........")
 }
   
 // Adding event listener to the signin button
