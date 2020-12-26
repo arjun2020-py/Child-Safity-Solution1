@@ -1,0 +1,132 @@
+  body{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif ;
+    background-color:white;
+
+ }
+.header{
+    background-color:yellowgreen;
+    width: 100%;
+    height: 85px;
+}
+.logo{
+    width: 50%;
+    padding-top: 32px;
+    float: left;
+}
+.login{
+    width: 50%;
+    float: left;
+}
+.logo-text{
+    color: red;
+font-size: 35px;
+font-weight: bold;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+margin-left: 170px;
+}
+.login-label{
+    color:black;
+    font-size: 13px;
+}
+.login-control{
+    margin-left: 113px;
+}
+.login{
+    padding-top: 10px;
+
+}
+.forgotten{
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+}
+.sub-ton{
+    background-color: lightblue;
+    color: whitesmoke;
+    height: 20px;
+    border-color: #29487;
+    cursor: pointer;
+}
+.sub-ton:hover{
+    background-color:aqua;
+}
+.main-body{
+  
+    width: 85%;
+    height: 80%;
+    float: left;
+}
+.body-text{
+    
+    padding-left: 586px;
+    padding-top: 20px;
+    
+}
+.text-pic{
+    padding-left: 461px;
+    width: 50px;
+    height: 80px;
+}
+.text-pic1{
+    padding-right: -5px;
+    width: 54px;
+    height: 80px;
+    margin-left: -158px;
+}
+.text-pic2{
+    padding-left: 53px;
+    width: 50px;
+    height: 80px;
+    margin-left: -123px;
+}
+
+.para{
+    padding-left: 449px;
+}
+.para1{
+    padding-right: 165px;
+    margin-left: -154px;
+}
+.para2{
+    margin-left: -74px;
+}
+.text-form{
+    margin-left: 524px;
+    border-radius: 27px;
+    background-color: white;
+    height: 24px;
+    width: 229px;
+    padding-left: 6px;
+
+}
+.text-form1{
+    margin-left: 523px;
+    border-radius: 27px;
+    background-color: white;
+    height: 24px;
+    width: 229px;
+    padding-left: 6px;
+}
+.passwroad{
+    margin-left: 523px;
+    border-radius: 27px;
+    backgroun
+    height: 24px;
+    width: 229px;
+    padding-left: 6px;
+}
+.submit{
+    margin-left: 519px;
+    background-color: #796009;
+    width:   241px;
+    height: 35px;
+    border-radius: 27px;
+    cursor: pointer;
+    padding-left: 6px;
+    border-color: white;
+
+}
+.submit:hover{
+    background-color:aqua;
