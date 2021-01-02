@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="chatroom.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!--It's just a concept, a chat UI design for direct messaging!
+  Enjoy! :) Don't forget to click the heart if you like it! -->
+
+  <div class="container">
+    <div class="chatbox">
+      <div class="top-bar">
+        <div class="avatar">
+          <p>V</p>
+        </div>
+        <div class="name">Voldemort</div>
+        <div class="icons">
+          <i class="fas fa-phone"></i>
+          <i class="fas fa-video"></i>
+        </div>
+        <div class="menu">
+          <div class="dots"></div>
+        </div>
+      </div>
+      <div class="middle">
+        <div class="voldemort">
+          <div class="outgoing">
+          </div>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <div class="chat">
+          <input type="text" placeholder="Type a message..." />
+          <button onclick="sendMessage()" type="submit" class="bu-ton"><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="messages"></div>
+    <div class="profile">
+      <div class="avatar">
+        <p>H</p>
+      </div>
+      <div class="name2">Harry<p class="email">Harry@potter.com</p>
+      </div>
+    </div>
+    <ul class="people">
+      <li class="person focus" onclick="toggleClass(this)">
+        <span class="title">Voldemort </span>
+        <span class="time">2:50pm</span><br>
+        <span class="preview">What are you getting... Oh, oops...</span>
+      </li>
+      <li class="person" onclick="toggleClass(this)">
+        <span class="title">Ron</span>
+        <span class="time">2:25pm</span><br>
+        <span class="preview">Meet me at Hogsmeade and bring...</span>
+      </li>
+      <li class="person" onclick="toggleClass(this)">
+        <span class="title">Hermione</span>
+        <span class="time">2:12pm</span><br>
+        <span class="preview">Have you and Ron done your hom...</span>
+      </li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>made by <a href="https://codepen.io/juliepark"> julie</a> ♡
+  </footer>
+  <script src="./chatroom.js"></script>
+</body>
+
+</html>

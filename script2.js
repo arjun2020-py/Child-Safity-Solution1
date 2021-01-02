@@ -37,9 +37,12 @@ const signIn = (event) => {
   else if ((split[0] === "pu")) {
     alert("You are Public")
     const publicLink = document.createElement("a");
-    publicLink.href = "public.html";
+    publicLink.href = "Public.html";
     publicLink.click()
     
+  }
+  else{
+    alert("Login error!...")
   }
 
 }
@@ -48,7 +51,6 @@ const signIn = (event) => {
 const signUp = (event) => {
   // preventing reloading page
    event.preventDefault();  
-  alert("signin up..........")
 }
   
 // Adding event listener to the signin button
@@ -56,4 +58,48 @@ loginSubmit.addEventListener("click", signIn);
 
 // Adding event listener to the signup button
 signUpSubmit.addEventListener("click", signUp);
+
+
+const username = document.getElementById("username")
+const email = document.getElementById('signEmail')
+const password = document.getElementById('signUpPwd')
+const confompasswrod = document.getElementById('conformPwd')
+const submit = document.getElementById('signup-submit')
+const errorElement = document.getElementById('error')
+
+submit.addEventListener('click', (e) => {
+
+  const message = [];
+
+  if (!username.value) {
+    message.push("Username is requied")
+  }
+  if (!email.value) {
+    message.push("email is requied")
+  }
+  if (password.value < 8) {
+    message.push("Password must need atleast 8 characters");
+  }
+  if (!password.value) {
+    message.push("password is requied")
+  }  
+
+  if (password.value !== confompasswrod.value) {
+    message.push("Please check your conform password");
+  }
+
+  if (message.length) {
+    for (let i = 0; i < message.length; i++) {
+      const div = document.createElement("div");
+      div.innerHTML = message[i];
+      errorElement.appendChild(div);
+    }
+    else{
+     alert("singin successfully....")
+    }
+  }
+
+})
+  
+
 

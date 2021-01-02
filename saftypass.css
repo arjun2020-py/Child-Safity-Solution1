@@ -1,0 +1,14 @@
+.continer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+text1{
+    padding: 2.5px;
+    color: black;
+    margin-top: 239px;
+    margin-left: 481px;
+    border-radius: 10px;
+}

@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  outline: 0;
+}
+
+.logo {
+  color: white;
+}
+
+.navigation {
+  align-items: center;
+  background-color: #1b53d4;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+ 
+
+.icon {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  font-size: 20px;
+} 
+
+.search {
+  border: 0; 
+  font-size: 18px;
+  padding: 10px;
+  width: 400px;
+}
+
+.sub-navigation {  
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+
+.sub-navigation > * {
+  background-color: transparent;
+  border: 0; 
+  font-size: 30px;
+}
+
+.template { 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  min-height: 200px;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+}
+
+.template-footer {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.template-footer > button {
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+}
+
+.grid { 
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, 400px);
+  justify-content: center;
+  padding: 10px 50px;
+}
+
+.commentBox {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  bottom: 20px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.commentBox > textarea {
+  width: 300px; 
+  padding: 10px;
+}
+
+.commentBox > button {
+  background-color: dodgerblue; 
+  cursor: pointer;
+  color: white;
+  border: 0;
+  padding: 10px;
+  transition: .2s;
+}
+.commentBox >button:active{ 
+  opacity: .2;
+}

@@ -1,4 +1,4 @@
-  body{
+body{
     margin: 0;
     font-family:Arial, Helvetica, sans-serif ;
     background-color:white;
@@ -7,7 +7,7 @@
 .header{
     background-color:yellowgreen;
     width: 100%;
-    height: 85px;
+    height:100px;
 }
 .logo{
     width: 50%;
@@ -46,23 +46,23 @@ margin-left: 170px;
     background-color: lightblue;
     color: whitesmoke;
     height: 20px;
-    border-color: #29487;
-    cursor: pointer;
+    border-color: #2948;
+    cursor:pointer;
 }
 .sub-ton:hover{
     background-color:aqua;
 }
 .main-body{
-  
+
     width: 85%;
     height: 80%;
     float: left;
 }
 .body-text{
-    
+
     padding-left: 586px;
     padding-top: 20px;
-    
+
 }
 .text-pic{
     padding-left: 461px;
@@ -112,7 +112,6 @@ margin-left: 170px;
 .passwroad{
     margin-left: 523px;
     border-radius: 27px;
-    backgroun
     height: 24px;
     width: 229px;
     padding-left: 6px;
@@ -130,3 +129,9 @@ margin-left: 170px;
 }
 .submit:hover{
     background-color:aqua;
+}
+#error{
+    text-align: center;
+    color:red;
+}
+
