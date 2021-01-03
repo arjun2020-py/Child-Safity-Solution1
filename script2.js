@@ -2,12 +2,29 @@ const emailInput = document.querySelector("#email");
 const passwordInput = document.querySelector("#pwd");
 const loginSubmit = document.querySelector("#loginSubmit");
 
-const signUpSubmit = document.querySelector("#signup-submit");  
+const signUpSubmit = document.querySelector("#signup-submit");
+
+const signup = document.getElementById("signup");
+const signin = document.getElementById("signin");
+const gotoSignUpLink = document.getElementById("gotoSignupLink");
+const gotoSignInLink = document.getElementById("gotoSigninLink");
+
+// goto signup
+gotoSignUpLink.addEventListener("click", () => {
+  signup.style.display = "flex";
+  signin.style.display = "none";
+});
+
+// goto signin
+gotoSignInLink.addEventListener("click", () => {
+  signup.style.display = "none";
+  signin.style.display = "flex"; 
+})
 
 // Signin
 const signIn = (event) => {
   // preventing reloading page
-   event.preventDefault();
+  event.preventDefault();
 
   // Getting email and password
   const email = emailInput.value;
@@ -22,9 +39,9 @@ const signIn = (event) => {
     const childLink = document.createElement("a");
     childLink.href = "child.html";
     childLink.click()
-    
-    
-  
+
+
+
 
   }
   else if (split[0] === "pa") {
@@ -32,16 +49,16 @@ const signIn = (event) => {
     const parentLink = document.createElement("a");
     parentLink.href = "parent.html";
     parentLink.click()
-    
+
   }
   else if ((split[0] === "pu")) {
     alert("You are Public")
     const publicLink = document.createElement("a");
     publicLink.href = "Public.html";
     publicLink.click()
-    
+
   }
-  else{
+  else {
     alert("Login error!...")
   }
 
@@ -50,9 +67,9 @@ const signIn = (event) => {
 // Signup
 const signUp = (event) => {
   // preventing reloading page
-   event.preventDefault();  
+  event.preventDefault();
 }
-  
+
 // Adding event listener to the signin button
 loginSubmit.addEventListener("click", signIn);
 
@@ -82,7 +99,7 @@ submit.addEventListener('click', (e) => {
   }
   if (!password.value) {
     message.push("password is requied")
-  }  
+  }
 
   if (password.value !== confompasswrod.value) {
     message.push("Please check your conform password");
@@ -94,13 +111,13 @@ submit.addEventListener('click', (e) => {
       div.innerHTML = message[i];
       errorElement.appendChild(div);
     }
-    
-    }
-    else {
-      alert("singin successfully....")
+
+  }
+  else {
+    alert("singin successfully....")
   }
 
 })
-  
+
 
 
