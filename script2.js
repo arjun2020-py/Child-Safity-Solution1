@@ -94,9 +94,10 @@ submit.addEventListener('click', (e) => {
       div.innerHTML = message[i];
       errorElement.appendChild(div);
     }
-    else{
-     alert("singin successfully....")
+    
     }
+    else {
+      alert("singin successfully....")
   }
 
 })

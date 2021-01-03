@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link type="stylesheet" href="saftypass.css">
-</head>
-<body>
-    <form class="continer">
-        <input type="password" placeholder="passwroad" class="text1"> 
-        <br>
-        <button>submit</button>
-        </form>
 
-   
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./saftypass.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form">
+
+      <p class="title">
+        Enter your safty password
+      </p>
+
+      <input id="password" type="password" placeholder="passwroad">
+      <br>
+      <button id="submit" onclick="getPassword()">submit</button>
+    </div>
+  </div>
 </body>
+
+<script src="./inbox.js"></script>
+
 </html>
