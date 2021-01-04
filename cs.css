@@ -27,7 +27,6 @@
 .navigation > h3 {
     font-size: 30px;
 }
-<<<<<<< HEAD
 .forgotten{
     color: black;
     font-size: 13px;
@@ -43,9 +42,9 @@
 .sub-ton:hover{
     background-color:aqua;
 }
-.main-body{
-=======
->>>>>>> 8ab68b5d6459bef5965943c9bf471b645921b9f6
+.drop-box{
+    display: flex;
+}
 
 .flex-box {
     align-items: center;
@@ -67,7 +66,7 @@
 }
 
 #signup {
-    display: none;
+    display: flex;
 }
 
 input{
@@ -87,7 +86,7 @@ input[type=submit] {
 }
 
 .active-on-click:active {
-    opacity: .2; 
+    opacity: .2;
 }   
 
 .cursor-pointer {
@@ -97,4 +96,7 @@ input[type=submit] {
 .link {
     text-decoration: underline;
 }
- 
+ .drop-box{
+     width: 100%;
+     padding: 5px;
+ }

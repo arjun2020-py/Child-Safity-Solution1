@@ -18,7 +18,14 @@
 
         <div id="signin" class="flex-box">
             <h1>Signin</h1>
-
+            <p>select the user type</p>
+           <select class="drop-box" id="user-type" onchange="getUserType(this)">
+                <option></option>
+               <option >Child</option>
+               <option>Parent</option>
+               <option>Public</option>
+           </select> 
+          
             <input type="email" placeholder="Email or phone no." />
             <input type="password" placeholder="Password" />
             <input type="submit" class="cursor-pointer active-on-click" />
@@ -27,12 +34,17 @@
 
         <div id="signup" class="flex-box">
             <h1>Signup</h1>
-
+            <p>select the user type</p>
+            <select class="drop-box" id="user-type" onchange="getUserType(this)">
+                 <option></option>
+                <option >Child</option>
+                <option>Parent</option>
+                <option>Public</option>
             <input type="text" placeholder="Username" />
             <input type="email" placeholder="Email or phone no." />
             <input type="password" placeholder="Password" />
             <input type="password" placeholder="Conform Password" />
-            <input type="submit" class="cursor-pointer active-on-click" />
+            <input type="submit" class="cursor-pointer active-on-click"  onclick="signUpSubmit(this)"/>
             <a id="gotoSigninLink" class="link cursor-pointer active-on-click">Already have an account?</a>
         </div>
         

@@ -1,3 +1,4 @@
+let userType
 const emailInput = document.querySelector("#email");
 const passwordInput = document.querySelector("#pwd");
 const loginSubmit = document.querySelector("#loginSubmit");
@@ -120,4 +121,16 @@ gotoSignInLink.addEventListener("click", () => {
 // })
 
 
+function getUserType(e){
+   userType=e.value;
 
+
+}
+function signUpSubmit(e){
+  e.preventDefault();
+  if(userType==Parent){
+    let link=document.createElement('a')
+    link.href='./saftypass.html';
+    link.click();
+  }
+}
