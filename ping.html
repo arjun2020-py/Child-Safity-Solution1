@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PingLocaton</title>
+</head>
+<body>
+    <a href="#" id="get_location">Get Location</a>
+    <div id="map">
+        <iframe id="google_map" width="425" height="350" scrolling="no"  marginheight="0" marginwidth="0" src="http://maps.google.co.uk?output=embed" frameborder="0"></iframe>
+    </div>
+    <script>
+        var c = function(pos) {
+            var  lat = pos.coords.latitude,
+                 long = pos.coords.longitude,
+                 coords = lat  + ',' + long;
+        document.getElementById('google_map').setAttribute('src','https://maps.google.co.uk/?q='+ coords+'&z=60&output=embed') 
+         }
+        document.getElementById('get_location').onclick = function() {
+            navigator.geolocation.getCurrentPosition(c);
+            return  false
+        }
+    </script>
+</body>
+</html>
