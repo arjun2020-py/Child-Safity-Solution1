@@ -16,37 +16,37 @@
             <h3>Child Safty Software</h3>
         </div>
 
-        <div id="signin" class="flex-box">
+        <form id="signin" class="flex-box">
             <h1>Signin</h1>
             <p>select the user type</p>
            <select class="drop-box" id="user-type" onchange="getUserType(this)">
                 <option></option>
-               <option >Child</option>
-               <option>Parent</option>
+               <option >Parent</option>
+               <option>Child</option>
                <option>Public</option>
            </select> 
           
-            <input type="email" placeholder="Email or phone no." />
-            <input type="password" placeholder="Password" />
-            <input type="submit" class="cursor-pointer active-on-click" />
+            <input type="email" placeholder="Email or phone no." required  />
+            <input type="password" placeholder="Password" minlength="8" required />
+            <input type="submit" value="Submit" class="cursor-pointer active-on-click" onclick="signinsubmit"/>
             <a id="gotoSignupLink" class="link cursor-pointer active-on-click">Create a new account?</a>
-        </div>
+        </form>
 
-        <div id="signup" class="flex-box">
+        <form id="signup" class="flex-box">
             <h1>Signup</h1>
             <p>select the user type</p>
             <select class="drop-box" id="user-type" onchange="getUserType(this)">
                  <option></option>
-                <option >Child</option>
-                <option>Parent</option>
+                <option >Parent</option>
+                <option>Child</option>
                 <option>Public</option>
-            <input type="text" placeholder="Username" />
-            <input type="email" placeholder="Email or phone no." />
-            <input type="password" placeholder="Password" />
-            <input type="password" placeholder="Conform Password" />
-            <input type="submit" class="cursor-pointer active-on-click"  onclick="signUpSubmit(this)"/>
+            <input type="text" placeholder="Username"  />
+            <input type="email" placeholder="Email or phone no."/>
+            <input type="password" placeholder="Password" minlength="8"/>
+            <input type="password" placeholder="Conform Password" minlength="8" />
+            <input type="submit" class="cursor-pointer active-on-click" value="Submit" onclick="signUpsubmit(this)">
             <a id="gotoSigninLink" class="link cursor-pointer active-on-click">Already have an account?</a>
-        </div>
+            </form>
         
 
     </div> 

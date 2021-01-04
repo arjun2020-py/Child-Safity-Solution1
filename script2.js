@@ -1,4 +1,5 @@
-let userType
+//golble scope varible 
+let userType="Child";
 const emailInput = document.querySelector("#email");
 const passwordInput = document.querySelector("#pwd");
 const loginSubmit = document.querySelector("#loginSubmit");
@@ -126,11 +127,24 @@ function getUserType(e){
 
 
 }
-function signUpSubmit(e){
-  e.preventDefault();
-  if(userType==Parent){
-    let link=document.createElement('a')
+function signUpsubmit(e){
+e.preventDefault();
+//common declare  varble 
+let link=document.createElement("a");
+if(userType==='Parent'){
+
     link.href='./saftypass.html';
-    link.click();
   }
+  else if(userType==='Child'){
+    link.href='./TimeLine.html';
+
+  }
+
+
+else{
+    link.href='./TimeLine.html';
 }
+link.click();
+}
+
+
