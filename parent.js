@@ -1,3 +1,7 @@
+function butt_click(e){
+  let link=document.createElement("a");
+if(){
+}
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -25,4 +29,5 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 /*setup timeinterval for images*/ 
-setInterval(()=>plusSlides(1),3000);   
+setInterval(()=>plusSlides(1),3000);  
+

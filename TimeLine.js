@@ -12,3 +12,6 @@ const commentElement = document.querySelector(".commentBox > textarea")
     alert(commentElement.value);
     document.querySelector(".commentBox").style.display = "none";
   }
+  function getpushimage(e){
+    
+  }

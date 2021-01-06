@@ -1,0 +1,22 @@
+.coninter{
+    display: flex;
+    flex-direction: column;/*cloum dirction conent algin */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    gap: 10px;
+    background-color: mintcream;
+}
+input,button{
+        color: red;
+        padding: 5px;
+}
+button{
+    background-color:dodgerblue ;
+    color: gold;
+    border: 0;
+}
+p{
+    color: maroon;
+}

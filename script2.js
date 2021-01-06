@@ -128,7 +128,7 @@ function getUserType(e){
 
 }
 function signUpsubmit(e){
-e.preventDefault();
+//e.preventDefault();
 //common declare  varble 
 let link=document.createElement("a");
 if(userType==='Parent'){
@@ -136,15 +136,30 @@ if(userType==='Parent'){
     link.href='./saftypass.html';
   }
   else if(userType==='Child'){
-    link.href='./TimeLine.html';
+    link.href='./selectparent.html';
 
   }
-
-
-else{
-    link.href='./TimeLine.html';
+  else{
+    link.href='./public.html';
 }
 link.click();
 }
+function signInpsubmit(e){
+ //   e.preventDefault();
+  //common declare  varble 
+  let link=document.createElement("a");
+  if(userType==='Parent'){
+
+      link.href='./saftypass.html';
+    }
+    else if(userType==='Child'){
+      link.href='./selectparent.html';
+
+    }
+else{
+      link.href='./Public.html';
+    }
+    link.click();
+  }
 
 
