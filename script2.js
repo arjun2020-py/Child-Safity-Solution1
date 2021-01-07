@@ -82,7 +82,7 @@ gotoSignInLink.addEventListener("click", () => {
 // const username = document.getElementById("username")
 // const email = document.getElementById('signEmail')
 // const password = document.getElementById('signUpPwd')
-// const confompasswrod = document.getElementById('conformPwd')
+//const confompasswrod = document.getElementById('conformPwd')
 // const submit = document.getElementById('signup-submit')
 // const errorElement = document.getElementById('error')
 
@@ -102,10 +102,10 @@ gotoSignInLink.addEventListener("click", () => {
 //   if (!password.value) {
 //     message.push("password is requied")
 //   }
+//if (password.value !== confompasswrod.value) {
 
-//   if (password.value !== confompasswrod.value) {
-//     message.push("Please check your conform password");
-//   }
+  // message.push("Please check your conform password");
+  //}
 
 //   if (message.length) {
 //     for (let i = 0; i < message.length; i++) {
@@ -130,7 +130,15 @@ function getUserType(e){
 function signUpsubmit(e){
 //e.preventDefault();
 //common declare  varble 
+const password = document.getElementById('signUpPwd')
+const confompasswrod = document.getElementById('conformPwd')
 let link=document.createElement("a");
+if (password.value !==confompasswrod.value) {
+  
+  alert("Please check your conform password");
+ }
+ else{
+   alert('hai')
 if(userType==='Parent'){
 
     link.href='./saftypass.html';
@@ -143,6 +151,7 @@ if(userType==='Parent'){
     link.href='./public.html';
 }
 link.click();
+ }
 }
 function signInpsubmit(e){
  //   e.preventDefault();

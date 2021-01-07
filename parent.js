@@ -1,7 +1,3 @@
-function butt_click(e){
-  let link=document.createElement("a");
-if(){
-}
 var slideIndex = 1;
 showSlides(slideIndex);
 

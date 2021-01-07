@@ -306,7 +306,7 @@ body {
 input {
   padding: 7px;
   width: 74%;
-  left: 5%;
+  left: 10%;
   position: absolute;
   border: 0;
   top: 13px;
@@ -375,7 +375,7 @@ input::placeholder {
   text-decoration: none;
 }
 .bu-ton{
-  margin-left: 320px;
+  margin-left: 328px;
   width: 28px;
   height: 25px;
 
@@ -385,7 +385,7 @@ input::placeholder {
   color: #A1E2D9;
 }
 .
-@-webkit-keyframes bounce {
+/*@-webkit-keyframes bounce {
   30% {
     -webkit-transform: translateY(-2px);
             transform: translateY(-2px);
