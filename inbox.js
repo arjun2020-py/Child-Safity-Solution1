@@ -1,6 +1,7 @@
-let saftyPassword = "";
+let saftyPassword = "mptc123";
+const chatroom_button = document.getElementById("chatbox_button");
+chatroom_button.addEventListener("click",askPassword);
 const passwordInput = document.querySelector("#password");
-
 function getPassword() {
   saftyPassword = passwordInput.value;
 
@@ -17,14 +18,14 @@ function getPassword() {
   
 }
 
-function askPassword() {
+function askPassword(e) {
+e.preventDefault();
 
-  let password = prompt("Give me the password");
-  if (saftypasswrod == password) {
+let password = prompt("Give me the password");
+  if (saftyPasswrod ===password) {
     let link = document.createElement("a")
     link.href = "./chatroom.html";
     link.click();
-    alert("acess okkk");
   }
   else {
     alert("acess deined");

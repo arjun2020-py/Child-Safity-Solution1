@@ -1,5 +1,5 @@
 //golble scope varible 
-let userType="Child";
+let userType="Parent";
 const password = document.getElementById('signUpPwd')
 const confompasswrod = document.getElementById('conformPwd')
 const emailInput = document.querySelector("#email");
@@ -24,7 +24,7 @@ gotoSignInLink.addEventListener("click", () => {
 })
 function getUserType(e){
    userType=e.value;
-
+}
 
 
  /*id of form element*/      /*event type */      /*action to perform*//*function name*/
@@ -71,4 +71,3 @@ else{
     }
     link.click();
   }
-  
