@@ -1,11 +1,11 @@
 //golble scope varible 
 let userType="Child";
+const password = document.getElementById('signUpPwd')
+const confompasswrod = document.getElementById('conformPwd')
 const emailInput = document.querySelector("#email");
 const passwordInput = document.querySelector("#pwd");
 const loginSubmit = document.querySelector("#loginSubmit");
-
 const signUpSubmit = document.querySelector("#signup-submit");
-
 const signup = document.getElementById("signup");
 const signin = document.getElementById("signin");
 const gotoSignUpLink = document.getElementById("gotoSignupLink");
@@ -105,7 +105,7 @@ gotoSignInLink.addEventListener("click", () => {
 //if (password.value !== confompasswrod.value) {
 
   // message.push("Please check your conform password");
-  //}
+  
 
 //   if (message.length) {
 //     for (let i = 0; i < message.length; i++) {
@@ -126,12 +126,13 @@ function getUserType(e){
    userType=e.value;
 
 
-}
+
+ /*id of form element*/      /*event type */      /*action to perform*//*function name*/
+signup.addEventListener("submit",signUpsubmit)
 function signUpsubmit(e){
-//e.preventDefault();
+e.preventDefault();
 //common declare  varble 
-const password = document.getElementById('signUpPwd')
-const confompasswrod = document.getElementById('conformPwd')
+
 let link=document.createElement("a");
 if (password.value !==confompasswrod.value) {
   

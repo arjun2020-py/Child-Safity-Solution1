@@ -20,9 +20,8 @@
             <h1>Signin</h1>
             <p>select the user type</p>
            <select class="drop-box" id="user-type" onchange="getUserType(this)">
-                <option></option>
-               <option >Parent</option>
-               <option>Child</option>
+               <option >Child</option>
+               <option>Parent</option>
                <option>Public</option>
            </select> 
           
@@ -36,15 +35,15 @@
             <h1>Signup</h1>
             <p>select the user type</p>
             <select class="drop-box" id="user-type" onchange="getUserType(this)">
-                 <option></option>
-                <option >Parent</option>
-                <option>Child</option>
+                
+                <option >Child</option>
+                <option>Parent</option>
                 <option>Public</option>
-            <input type="text" placeholder="Username"  />
-            <input type="email" placeholder="Email"/>
-            <input type="password" placeholder="Password" minlength="8" id="signUpPwd'"/>
-            <input type="password" placeholder="Conform Password" minlength="8" id="conformPwd"/>
-            <input type="submit" class="cursor-pointer active-on-click" value="Submit" onclick="signUpsubmit(this)">
+            <input type="text" placeholder="Username" required/>
+            <input type="email" placeholder="Email"required/>
+            <input type="password" placeholder="Password" minlength="8" id="signUpPwd" required/>
+            <input type="password" placeholder="Conform Password" minlength="8" id="conformPwd" required/>
+            <input type="submit" class="cursor-pointer active-on-click" value="Submit" >
             <a id="gotoSigninLink" class="link cursor-pointer active-on-click">Already have an account?</a>
             </form>
         

@@ -6,21 +6,40 @@
     <title>PingLocaton</title>
 </head>
 <body>
-    <a href="#" id="get_location">Get Location</a>
-    <div id="map">
-        <iframe id="google_map" width="425" height="350" scrolling="no"  marginheight="0" marginwidth="0" src="http://maps.google.co.uk?output=embed" frameborder="0"></iframe>
-    </div>
-    <script>
-        var c = function(pos) {
-            var  lat = pos.coords.latitude,
-                 long = pos.coords.longitude,
-                 coords = lat  + ',' + long;
-        document.getElementById('google_map').setAttribute('src','https://maps.google.co.uk/?q='+ coords+'&z=60&output=embed') 
-         }
-        document.getElementById('get_location').onclick = function() {
-            navigator.geolocation.getCurrentPosition(c);
-            return  false
+    <a href="#" id="get_location">Get Location</a> 
+    <div id='demo'></div> 
+    <div class="map"></div>
+    <script>var x = document.getElementById("demo");
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
         }
-    </script>
+
+        function showPosition(position) {
+
+            const map = document.querySelector(".map")
+            const iframe = document.createElement("iframe");
+
+
+            var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+            var img_url = "https://maps.googleapis.com/maps/api/elevation/json?locations=39.7391536,-104.9847034&key=AIzaSyC0W21SrykHBT2mXNv9FB7KSnVdaAJ9TUo";
+            iframe.src = img_url;
+
+            map.appendChild(iframe);
+        }
+
+        var c = function (pos) {
+            var lat = pos.coords.latitude,
+                long = pos.coords.longitude,
+                coords = lat + ',' + long;
+            document.getElementById('google_map').setAttribute('src', 'https://maps.google.co.uk/?q=' + coords + '&z=60&output=embed')
+        }
+
+        document.getElementById('get_location').onclick = getLocation</script>
+
 </body>
 </html>
