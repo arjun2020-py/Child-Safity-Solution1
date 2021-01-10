@@ -107,3 +107,9 @@
 .commentBox >button:active{ 
   opacity: .2;
 }
+.name{
+  display: flex;
+  width: 82px;
+  height: 26px;
+  border-radius: 10px;
+}
