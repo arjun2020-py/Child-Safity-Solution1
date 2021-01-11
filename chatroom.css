@@ -188,12 +188,12 @@ body {
 }
 
 .dots {
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background-color: #79C7C5;
-  -webkit-box-shadow: 0px 7px 0px #79C7C5, 0px 14px 0px #79C7C5;
-          box-shadow: 0px 7px 0px #79C7C5, 0px 14px 0px #79C7C5;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #79C7C5;
+    -webkit-box-shadow: 0px 7px 0px #79C7C5, 0px 14px 0px #79C7C5;
+    box-shadow: 0px 7px 0px #79C7C5, 0px 14px 0px #79C7C5;
 }
 
 .middle {
@@ -384,7 +384,11 @@ input::placeholder {
 .button .footer .a:hover {
   color: #A1E2D9;
 }
-.
+.online{
+  padding-top: 40px;
+  padding-left: 50px;
+  font-size: 15px;
+}
 /*@-webkit-keyframes bounce {
   30% {
     -webkit-transform: translateY(-2px);
