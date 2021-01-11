@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="chatroom.css">
   <title>Document</title>
 </head>
@@ -20,18 +19,21 @@
       <div class="avatar">
           <p>V</p>
         </div>
-        <div class="name">Voldemort</div>
+      <!-- just id for class name -->
+        <div class="name" id="currentUser">Voldemort</div>
         <div class="online">online</div>
         <div class="icons">
           <i class="fas fa-phone"></i>
           <i class="fas fa-video"></i>
         </div>
         <div class="menu">
-          <div class="dots"></div>
         </div>
       </div>
       <div class="middle">
         <div class="voldemort">
+        <!--just add class incoming  -->
+          <div class="incoming">
+          </div>
           <div class="outgoing">
           </div>
         </div>
@@ -48,7 +50,7 @@
       <div class="avatar">
         <p>H</p>
       </div>
-      <div class="name2">Numan<p class="email">Harry@potter.com</p>
+      <div class="name2">Harry<p class="email">Harry@potter.com</p>
       </div>
     </div>
     <ul class="people">
@@ -71,7 +73,7 @@
   </div>
 
   <footer>
-    <p>made by <a href="https://codepen.io/juliepark"> julie</a> ♡
+    <p>made by <a href="https://codepen.io/juliepark"></a> 
   </footer>
   <script src="./chatroom.js"></script>
 </body>

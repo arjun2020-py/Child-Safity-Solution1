@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
 html {
   display: -ms-grid;
   display: grid;
@@ -205,15 +205,18 @@ body {
   height: 80%;
 }
 
-.incoming {
+.incoming { 
+  display: flex;
+  flex-direction: column-reverse;
   position: absolute;
   width: 50%;
-  height: 100%;
+  height: 70%;
   padding: 20px;
 }
 
 .incoming .bubble {
   background: #b2b2b2;
+  max-width: fit-content;
 }
 
 .typing {
