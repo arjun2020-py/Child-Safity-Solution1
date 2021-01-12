@@ -11,6 +11,11 @@
 </head>
 
 <body>
+    <div class="intro">
+        <h1 class="logo-header">
+            <span class="logo">Child</span><span class="logo">Safty</span><span class="logo">Solution</span>
+        </h1>
+    </div>
     <div class="container">
         <div class="navigation">
             <h3>Child Safty Software</h3>
@@ -19,13 +24,13 @@
         <form id="signin" class="flex-box">
             <h1>Signin</h1>
             <p>select the user type</p>
-           <select class="drop-box" id="user-type" onchange="getUserType(this)">
+           <select class="drop-box" id="userType" onchange="getUserType(this)">
                <option >Parent</option>
                <option>Child</option>
                <option>Public</option>
            </select> 
           
-            <input type="email" placeholder="Email or phone no." required  />
+            <input type="email" placeholder="Email or phone no." required />
             <input type="password" placeholder="Password" minlength="8" required />
             <input type="submit" value="Submit" class="cursor-pointer active-on-click" onclick="signInpsubmit(this)"/>
             <a id="gotoSignupLink" class="link cursor-pointer active-on-click">Create a new account?</a>
@@ -36,7 +41,7 @@
             <p>select the user type</p>
             <select class="drop-box" id="user-type" onchange="getUserType(this)">
                 
-                <option >Parent</option>
+              <option >Parent</option>
                 <option>Child</option>
                 <option>Public</option>
             </select>

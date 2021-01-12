@@ -9,7 +9,12 @@ body{
   width: 100%;
   height: 140px;
 }
-
+.menu-text1:hover{
+  background:black;
+}
+.menu-text2:hover{
+  background:black;
+}
 .logo-pic1{
   width: 66px;
 margin-top: 40px;

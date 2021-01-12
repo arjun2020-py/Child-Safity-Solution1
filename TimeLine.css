@@ -54,8 +54,9 @@
 .template { 
   box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
   min-height: 200px;
-  position: relative;
-}
+  position: relative;  
+  max-width: 500px;
+} 
 
 .image {
   width: 100%;
@@ -74,11 +75,13 @@
 }
 
 .grid { 
-  display: grid;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   gap: 20px;
   grid-template-columns: repeat(1, 400px);
   justify-content: center;
-  padding: 10px 50px;
+  padding: 10px 50px; 
 }
 
 .commentBox {
@@ -106,10 +109,4 @@
 }
 .commentBox >button:active{ 
   opacity: .2;
-}
-.name{
-  display: flex;
-  width: 82px;
-  height: 26px;
-  border-radius: 10px;
 }
