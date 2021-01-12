@@ -2,7 +2,8 @@
 let userType="Parent";
 const password = document.getElementById('signUpPwd')
 const confompasswrod = document.getElementById('conformPwd')
-const emailInput = document.querySelector("#email");
+const
+ emailInput = document.querySelector("#email");
 const passwordInput = document.querySelector("#pwd");
 const loginSubmit = document.querySelector("#loginSubmit");
 const signUpSubmit = document.querySelector("#signup-submit");
@@ -54,6 +55,8 @@ link.click();
  }
  
 }
+
+signin.addEventListener("submit",signInpsubmit)
 function signInpsubmit(e){
  //   e.preventDefault();
   //common declare  varble 
@@ -71,38 +74,3 @@ else{
     }
     link.click();
   }
-
-  let intro =  document.querySelector('.intro');
-let logo = document.querySelector('.logo-header');
-let logospan =document.querySelectorAll('.logo');
-window.addEventListener('load',()=>{
-   setTimeout(() => {
-      
-    logospan.forEach((span,idx)=>{
-
-        setTimeout(() => {
-            
-            span.classList.add('active');
-        }, [idx + 1]+400);
-    });
-
-setTimeout(() => {
-    
-    logospan.forEach((span,idx)=>{
-        setTimeout(() => {
-           
-            span.classList.remove('active');
-            span.classList.add('fade');
-  
-        },[idx + 1]*50);
-    })
-},5000);
-
-setTimeout(() => {
-    intro.style.top = '-100vh';
-},5000);
-
-   },)
-})
-
-
