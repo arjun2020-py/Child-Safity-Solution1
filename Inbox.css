@@ -26,6 +26,7 @@ body{
 .optiion{
   display: flex;
   gap: 20px;
+  padding-left: 2px;
   
 }
 .chatroom{
@@ -39,4 +40,7 @@ color: white;
 .home{
   text-decoration: none;
   color:white; 
+ margin-left:20px;
+ padding-left: 0px;
+
 }
