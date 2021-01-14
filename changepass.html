@@ -8,17 +8,17 @@
 </head>
 <body>
     <div class="main-body1">
-    <div class="right-section">
+    <form class="right-section">
         <h1 class="head">Change password</h1>
-        <label for="form-text">Old Passwrod</label>
-        <input class="form-name" type="password">
+        <label for="form-text">Old Passwrod </label>
+        <input class="form-name" type="password" required>
         <label for="form-text">New Passwrod</label>
-        <input class="form-name" type="password">
+        <input class="form-name" type="password"  id="signUpPwd" required>
         <label for="form-text">Confirm Passwrod</label>
-        <input class="form-name" type="password">
-        <input  class="button" type="submit" value="Change" onclick="forgoton_button(this)">
+        <input class="form-name" type="password"  id="conformPwd" required>
+        <input  class="button" type="submit" value="Change" id="form_id">
 
-    </div>
+    </form>
 </div>
 <script src="changepass.js"></script>
 </body>

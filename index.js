@@ -2,8 +2,7 @@
 let userType="Parent";
 const password = document.getElementById('signUpPwd')
 const confompasswrod = document.getElementById('conformPwd')
-const
- emailInput = document.querySelector("#email");
+const emailInput = document.querySelector("#email");
 const passwordInput = document.querySelector("#pwd");
 const loginSubmit = document.querySelector("#loginSubmit");
 const signUpSubmit = document.querySelector("#signup-submit");
