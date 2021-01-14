@@ -48,7 +48,7 @@ if(userType==='Parent'){
 
   }
   else{
-    link.href='./public.html';
+    link.href='./Public.html';
 }
 link.click();
  }
