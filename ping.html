@@ -3,43 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PingLocaton</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="ping.css">
 </head>
 <body>
-    <a href="#" id="get_location">Get Location</a> 
-    <div id='demo'></div> 
-    <div class="map"></div>
-    <script>var x = document.getElementById("demo");
-        function getLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition);
-            } else {
-                x.innerHTML = "Geolocation is not supported by this browser.";
-            }
-        }
-
-        function showPosition(position) {
-
-            const map = document.querySelector(".map")
-            const iframe = document.createElement("iframe");
-
-
-            var latlon = position.coords.latitude + "," + position.coords.longitude;
-
-            var img_url = "https://maps.googleapis.com/maps/api/elevation/json?locations=39.7391536,-104.9847034&key=AIzaSyC0W21SrykHBT2mXNv9FB7KSnVdaAJ9TUo";
-            iframe.src = img_url;
-
-            map.appendChild(iframe);
-        }
-
-        var c = function (pos) {
-            var lat = pos.coords.latitude,
-                long = pos.coords.longitude,
-                coords = lat + ',' + long;
-            document.getElementById('google_map').setAttribute('src', 'https://maps.google.co.uk/?q=' + coords + '&z=60&output=embed')
-        }
-
-        document.getElementById('get_location').onclick = getLocation</script>
-
+    
+    <div class="navbar">
+        <a href="https://www.google.com/maps/place/%E0%B4%87%E0%B4%B0%E0%B4%BF%E0%B4%99%E0%B5%8D%E0%B4%99%E0%B5%BD,+%E0%B4%95%E0%B5%87%E0%B4%B0%E0%B4%B3%E0%B4%82/@11.547071,75.5908429,14z/data=!3m1!4b1!4m5!3m4!1s0x3ba685e812b7d0ad:0xb1a190e30b251584!8m2!3d11.545179!4d75.6028903">SetDefaultLocation</a>
+        <a href="">Child'sLiveLocation</a>
+        </div>
 </body>
 </html>
