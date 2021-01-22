@@ -62,10 +62,10 @@ function signInpsubmit(e){
   let link=document.createElement("a");
   if(userType==='Parent'){
 
-      link.href='./saftypass.html';
+      link.href='./parent.html';
     }
     else if(userType==='Child'){
-      link.href='./selectparent.html';
+      link.href='child.html';
 
     }
 else{

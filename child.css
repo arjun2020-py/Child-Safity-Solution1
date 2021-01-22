@@ -4,8 +4,30 @@ body{
   background-color:white;
 
 }
-.header1{
+
+.navigation {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   background-color:#a83291;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  color: white;
+  gap: 10px;
+}
+
+.header1{
   width: 100%;
   height: 140px;
 }
@@ -16,35 +38,22 @@ body{
   background:black;
 }
 .logo-pic1{
-  width: 66px;
-margin-top: 40px;
-margin-left: 32px;
+  width: 66px; 
 }
-  .heading{
-    margin-left: 110px;
-    margin-top: -34px;
+  .heading{ 
     color: white;
   }
   .menu-text1{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-  color: white;
-  margin-left: 669px;
-  margin-top:555px ;
-  padding-left: 0px;
+  color: white;   
+ } 
 
- }
-.menu-text2{
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  color: white;
-  margin-left: 25px;
-}
-.main-body{
-  
-  width: 85%;
-  height: 80%;
-  float: left;
+
+.main-body{ 
+  width: fit-content;
+  margin: auto;
+  height: 80%; 
 }
 /* Style the search field */
 form.example input[type=text] {
@@ -93,9 +102,8 @@ img {vertical-align: middle;}
   margin: auto;
 }
 .image{
-  width: 100%;
-  margin-top: 5px;
-  margin-left: 93px;
+  width: 100%; 
+  margin: auto;
 }
 /* Next & previous buttons */
 .prev, .next {
