@@ -27,6 +27,7 @@
   }
 
   .template { 
+    /*overflow*/
     flex-wrap: wrap;
     display: flex;
     gap: 32px;

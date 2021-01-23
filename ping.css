@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+  
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -64,4 +68,9 @@ body {
   
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+  #map{
+    display: none;
+    width: 100%;
+    padding: 15px;
   }
