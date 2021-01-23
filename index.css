@@ -145,6 +145,7 @@ header, h2{
     display: inline-block;
     bottom:-20px;
     opacity: 0;
+    padding:0 3px;
 
 }
 .logo.active{
