@@ -26,7 +26,8 @@
     width: 700px;
   }
 
-  .template {
+  .template { 
+    flex-wrap: wrap;
     display: flex;
     gap: 32px;
     margin: 20px 0;
@@ -34,6 +35,12 @@
    padding: 26px;
   }
 
+  @media (max-width: 700px) {
+    .container {
+      width: 100%;
+    }
+  }
+  
   .data {
     min-height: 100%;
   }
