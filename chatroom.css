@@ -100,7 +100,7 @@ body {
 }
 
 .email {
-  color: #F9FBFF;
+  color:;
   font-size: .5em;
   margin-left: -30px;
   margin-top: 2px;
@@ -230,7 +230,7 @@ body {
   padding: 8px 13px 9px 13px;
 }
 
-.ellipsis {
+/* .ellipsis { 
   width: 5px;
   height: 5px;
   display: inline-block;
@@ -238,9 +238,9 @@ body {
   border-radius: 50%;
   -webkit-animation: bounce 1.3s linear infinite;
           animation: bounce 1.3s linear infinite;
-}
+}*/
 
-.one {
+/*.one {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
@@ -254,7 +254,7 @@ body {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
-
+*/
 .bubble {
   position: relative;
   display: inline-block;
@@ -382,7 +382,11 @@ input::placeholder {
   width: 28px;
   height: 25px;
   border-radius: 20px;
+  cursor: pointer;
 
+}
+.bu-ton:hover{
+  background-color: lightblue;
 }
 
 .button .footer .a:hover {
