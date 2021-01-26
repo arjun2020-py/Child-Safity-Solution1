@@ -10,6 +10,7 @@ const form=document.getElementById("form_id");
   
     alert("Please check your conform password");
    }else{
+     alert("change password succfully");
     link1.href="./index.html";
     link1.click();
     }

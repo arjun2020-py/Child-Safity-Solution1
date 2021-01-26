@@ -27,3 +27,6 @@ function showSlides(n) {
 /*setup timeinterval for images*/ 
 setInterval(()=>plusSlides(1),3000);  
 
+/*function goBack() {
+  window.history.back()
+}*/

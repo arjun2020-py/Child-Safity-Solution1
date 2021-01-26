@@ -178,6 +178,12 @@ body{
   .active, .dot:hover {
     background-color: #717171;
   }
+  /* #goback{ 
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white; 
+
+  }*/
   
   /* Fading animation */
   .fade {
