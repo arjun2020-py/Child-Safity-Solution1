@@ -1,26 +1,3 @@
-let saftyPasswrod = "mptc123";
-
-const chatroom_button = document.getElementById("chatbox_button");
-if(chatroom_button)
-{
-chatroom_button.addEventListener("click", askPassword);
-}
-const passwordInput = document.querySelector("#password");
-function getPassword() {
-  saftyPassword = passwordInput.value;
-
-  if (saftyPassword) {
-    alert("Password successfully saved");
-    let link = document.createElement("a")
-    link.href = "./parent.html";
-    link.click();
-
-  }
-  else {
-    alert("acess deined")
-  }
-
-}
 
 function askPassword(e) {
   e.preventDefault();
@@ -40,7 +17,7 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides(slideIndex +=n);
 }
 
 function currentSlide(n) {
@@ -64,3 +41,9 @@ function showSlides(n) {
 }
 /*setup timeinterval for images*/ 
 setInterval(()=>plusSlides(1),3000);  
+const User=document.getElementById('activity');
+
+if(user==='public'){
+
+  setting.style.display = "none";
+}
