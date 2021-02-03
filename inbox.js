@@ -65,3 +65,22 @@ function showSlides(n) {
 /*setup timeinterval for images*/ 
 setInterval(()=>plusSlides(1),3000);  
 
+/*add passwroad for add new friend*/
+const add_button = document.getElementById("add_button");
+if(add_button)
+{
+add_button.addEventListener("click", AskPassword);
+} 
+function AskPassword(e) {
+  e.preventDefault();
+
+  let password = prompt("Give me the password");
+  if (saftyPasswrod === password) {
+    let link = document.createElement("a")
+    link.href = "./addfriend.html";
+    link.click();
+  }
+  else {
+    alert("acess deined");
+  }
+}
